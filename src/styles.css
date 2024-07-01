@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    padding: 10px 10px 50px 10px;
+}
+
+
+li {
+    list-style: none;
+    margin: 5px 10px 20px 7px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 50px;
+}
+
+h2 {
+    margin: 3px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    margin-top: 17vh;
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+footer ul {
+    padding: 38px;
+    display: flex;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin: 20px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.socials {
+    width: 100px;
+    height: 320px;
+    background-color: rgb(1, 90, 50);
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 27vh;
+}
+
+.social {
+    width: 100%;
+    height: 33%;
+}
+
+@media only screen and (max-width: 600px) {
+    .socials{
+        display: none;
+    }
+}
+
+.wave {
+    fill: rgb(0, 0, 0);
+    width: 100vw;
+    height: 64vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .wave{
+        height: 50vh;
+    }
+}
+
+.social svg {
+    /*fill: rgb(255, 255, 255); */
+}
+
+a:hover {
+    color: rgb(0, 143, 79);
+}
+
+/* Work Page */
+
+.work-details {
+    width: 50%;
+}
+
+.work-details td {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .work-details {
+        width: 80%;
+    }
+
+    .work-details td {
+        padding: 5px;
+    }
+}
+
+.sub-pages-footer {
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .sub-pages-footer {
+        position: relative;
+    }
+}
+
+
+
+/* About me */
+
+.about-me {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    height: 180px;
+    margin: 40px 10px 10px 10px;
+}
+
+/* Stack page */
+
+.stack-table {
+    width: 50%;
+}
+
+.stack-table td {
+    padding: 30px;
+}
+
+.stack-table .container {
+    position: relative;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(1, 90, 50);
+  }
+
+.stack-table td:hover .overlay {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .stack-table {
+        width: 80%;
+    }
+
+    .stack-table td {
+        padding: 5px;
+    }
+}
+
+/* Contact page */
+
+.form-submit {
+    width: 50%;
+
+}
+
+.form-submit form {
+    width: 100%;
+}
+
+.form-submit .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control {
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+    padding: 20px 0;
+}
+
+.form-row .form-control:focus,
+.form-submit textarea:focus
+{
+    outline: 0;
+    background-color: rgb(206, 206, 42);
+}
+
+.form-submit textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    padding: 0;
+    resize: none;
+    margin-top: 5px;
+    padding: 20px 0;
+}
+
+form button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgb(53, 175, 175)
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-submit {
+        width: 80%;
+    }
+    .form-submit .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row .form-control{
+        width: 100%;
+        margin-top: 5px;
+    }
+}
